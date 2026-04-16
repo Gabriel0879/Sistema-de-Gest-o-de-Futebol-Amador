@@ -61,6 +61,7 @@ npx prisma migrate dev
 npm run dev
 
 🔐 Rotas da API
+
 Auth
 POST /auth/register → Cadastro
 POST /auth/login → Login
@@ -72,6 +73,7 @@ PUT /jogadores/:id → Editar jogador
 DELETE /jogadores/:id → Desativar jogador
 
 📌 Regras de Negócio
+
 Cada organizador só pode acessar seus próprios dados
 Jogadores não são deletados, apenas desativados
 Nível de habilidade varia de 0.5 a 5.0
