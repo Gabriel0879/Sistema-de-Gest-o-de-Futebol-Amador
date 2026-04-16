@@ -7,17 +7,20 @@ Sistema web desenvolvido para auxiliar na organização e gestão de futebol ama
 O objetivo do projeto é digitalizar e organizar a gestão de jogos e competições amadoras, substituindo controles manuais e desorganizados por uma solução estruturada e automatizada — algo que é uma dor comum nesse tipo de cenário .
 
 🚀 Funcionalidades (até a Sprint atual)
+
 🔐 Autenticação de Organizadores
 Cadastro de organizador
 Login com autenticação JWT
 Recuperação de senha (simulada)
 Edição de perfil
+
 👥 Gestão de Jogadores
 Cadastro de jogadores
 Definição de nível de habilidade (0.5 a 5 estrelas)
 Edição de dados
 Desativação de jogadores (soft delete)
 Listagem de jogadores por organizador
+
 🛠️ Tecnologias Utilizadas
 Backend
 Node.js
@@ -29,6 +32,8 @@ Bcrypt (hash de senha)
 Ferramentas
 Git e GitHub
 Postman / Insomnia
+
+_________________________________________
 📁 Estrutura do Projeto
 src/
  ├── controllers/
@@ -37,6 +42,8 @@ src/
  ├── services/
  ├── prisma/
  └── app.js
+ ________________________________________
+ 
 ⚙️ Como rodar o projeto
 1. Clonar o repositório
 git clone https://github.com/Gabriel0879/Sistema-de-Gest-o-de-Futebol-Amador.git
@@ -54,6 +61,7 @@ JWT_SECRET="sua_chave_secreta"
 npx prisma migrate dev
 6. Iniciar o servidor
 npm run dev
+
 🔐 Rotas da API
 Auth
 POST /auth/register → Cadastro
@@ -64,6 +72,7 @@ GET /jogadores → Listar jogadores
 POST /jogadores → Criar jogador
 PUT /jogadores/:id → Editar jogador
 DELETE /jogadores/:id → Desativar jogador
+
 📌 Regras de Negócio
 Cada organizador só pode acessar seus próprios dados
 Jogadores não são deletados, apenas desativados
