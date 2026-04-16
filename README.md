@@ -33,7 +33,6 @@ Ferramentas
 Git e GitHub
 Postman / Insomnia
 
-------------------------------
 📁 Estrutura do Projeto
 src/
  ├── controllers/
@@ -42,7 +41,6 @@ src/
  ├── services/
  ├── prisma/
  └── app.js
------------------------------
  
 ⚙️ Como rodar o projeto
 1. Clonar o repositório
